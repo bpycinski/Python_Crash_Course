@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title></title>
+
+		<meta name="description" content="A Crash Course in Python">
+		<meta name="author" content="Marc Scott">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/Bourne.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<a href="http://www.bourne-grammar.lincs.sch.uk"><img src="images/logo.png"></img></a>
+		<a href="https://github.com/MarcScott/Python_Crash_Course"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>A Crash Course in Python</h1>
+					<p>
+						<small>Created by <a href="http://coding2learn.org">Marc Scott</a> / <a href="http://twitter.com/coding2learn">@coding2learn</a></small>
+						<small>using <a href="https://github.com/hakimel/reveal.js">reveal.js</a></small>
+					</br><small><a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">How The Internet Works</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.coding2learn.org" property="cc:attributionName" rel="cc:attributionURL">Marc Scott</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.</small>
+					</p>
+				</section>
+
+				<section>
+					<iframe src="http://player.vimeo.com/video/50322369" width="500" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/50322369">PyConUK - Programmer Pythonical Song</a> from <a href="http://vimeo.com/user11414553">Hawkz</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+				</section>
+
+				<section>
+					<h2>What is Python?</h2>
+					<p>Python is a programming language.</p>
+					<p>A programming language is a language designed to communicate instructions to a computer. Programming languages can be used to create programs that control the behavior of a computer.</p>
+				</section>
+
+				<section>
+					<section>
+						<h1>Using Python</h1>
+						<br/><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>It's just text.</h2>
+						<p>Like most programming languages, you can write Python programs using any text editor.</p>
+						<p>You just need to make sure that you save your files with the extension <code>.py</code>
+					<br/><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>IDLE</h2>
+						<p>We're going to use an IDE to write our Python programs.</p>
+						<p>IDE stands for Interactive Development Environment.</p>
+						<p>An IDE makes coding easier as it can recognise the language you are using and provide hints.</p>
+						<p>The IDE we'll use is called IDLE. It's a very simple IDE designed to code Python in.</p>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>Loading IDLE</h2>
+						<p>Find IDLE on your computer and start it up. You should see something like this.</p>
+						<img src="images/interpreter.png"></img>
+						<br/><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>The Interpreter.</h2>
+						<p>What you are looking at is a Python interpreter. An interpreter lets us write lines of code that are instantly run.</p>
+						<p>Not all programming languages can be used like this. Some languages require compiling first (where they are translated into a machine language first.). The advantages of an interpreted language is that you can quickly see what your code does. The disadvantage is that your programs will run a slower.</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Python as a</h1>
+						<h1>calculator</h1>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>Operators</h2>
+						<p>Python can be used to perform calculations, using what are called <em>operators</em>.</p>
+						<p>Operators are just a word for things like + and -.</p>
+						<p>We call the the things we're using operators on (in this case numbers) <em>operands</em>.
+						<p>Try typing the following in the interpreter and hitting Enter after each one.</p>
+						<pre><code>
+6 + 3
+6 - 3
+6 * 3
+6 / 3
+						</code></pre>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>Arithmetic operators</h2>
+						<p>Here's a table of the operators that we can use to do some basic maths.</p>
+						<p>If a = 10 and b = 20 then:</p>
+						<small><table>
+						<tbody><tr>
+						<th>Operator</th><th>Description</th><th>Example</th>
+						</tr>
+						<tr>
+						<td>+</td><td>Addition - Adds values on either side of the operator</td><td> a + b will give 30</td>
+						</tr>
+						<tr>
+						<td>-</td><td>Subtraction - Subtracts right hand operand from left hand operand</td><td> a - b will give -10</td>
+						</tr>
+						<tr>
+						<td>*</td><td>Multiplication - Multiplies values on either side of the operator</td><td> a * b will give 200</td>
+						</tr>
+						<tr>
+						<td>/</td><td>Division - Divides left hand operand by right hand operand</td><td> b / a will give 2</td>
+						</tr>
+						<tr>
+						<td>%</td><td>Modulus - Divides left hand operand by right hand operand and returns remainder</td><td> b % a will give 0</td>
+						</tr>
+						<tr>
+						<td>**</td><td>Power calculation</td><td> a**b will give 10 to the power 20</td>
+						</tr>
+						</tbody></table></small>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>Playing with operators.</h2>
+						<p>Have a play around with <em>operands</em> and <em>operators</em> using the interpreter.</p>
+						<p>See if you can find a calculation that gives an answer that is plainly wrong.</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Data Types (1)</h1>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>Integers</h2>
+						<p>Did you find a calculation that didn't give a correct answer?</p>
+						<p>If not, then try this calculation.</p>
+						<pre><code>
+5 / 2
+						</code></pre>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>Integers</h2>
+						<p>Integers are whole numbers like 1, 5, 1000, -7.</p>
+						<p>In Python (and many other languages) if you perform a calculation on an integer, you always get an integer back.</p>
+						<p>We know that 5 / 2 = 2.5, but 2.5 is not an integer. Python just ditches the .5 and returns 2.</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Data Types (2)</h1>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>Floating point numbers</h2>
+						<p>Floating point numbers are <em>representations</em> of real numbers like 2.5, 3.7 or 1.0</p>
+						<p>The representation part is important. Computers (for reasons you'll learn later) struggle with real numbers, so sometimes they are inaccurate.</p>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>Using Floating point numbers</h2>
+						<p>Going back to our 5 / 2 calculation. If we want an answer to be a floating point number (from here on in a <em>float</em>) we need to use at least one float in our calculation.</p>
+						<p>Try these calculations.</p>
+						<pre><code>
+5.0 / 2.0
+5 / 2.0
+5.0 / 20 				</code></pre>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>Floats</h2>
+						<p>As long as we use one or more floats in our calculations, then Python will return a float.</p>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>The problem with Floats</h2>
+						<p>Floats aren't always accurate. This might seem strange as you'd have thought computers would be precise, but because computers work using binary numbers (1 or 0), they can't use real numbers precisely. Try the example below in the interpreter.</p>
+						<pre><code>
+0.1 + 0.2
+						</code></pre>
+						<p>This is why we should try and limit our use of floats.</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Data Types (3)</h1>
+						<p>You can always find out what data type you have, by using the <code>type()</code> function.</p>
+						<p>Try this in your interpreter:</p>
+						<pre><code>
+type(5)
+type(0.5)
+						</pre></code>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>Other data types</h2>
+						<p>Use the type function to find out the data types for the following:</p>
+						<ol>
+							<li>"Hello world"</li>
+							<li>True</li>
+							<li>False</li>
+							<li>12345678987654321</li>
+						</ol>
+						<p>Don't worry too much about these yet, we'll cover them in detail later.</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Variables</h1>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>		
+					</section>
+					<section>
+						<p>You may have seen variables before in Scratch.</p>
+						<p>A variable is a way of storing data.</p>
+						<p>Try typing the following into you interpreter and hitting enter each time.</p>
+						<pre><code>
+a = 6
+a
+a + a
+a - a
+						</code></pre>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>		
+					</section>
+					<section>
+						<h2>So what are variables.</h2>
+						<p>Try typing the following into your interpreter, then watch the video on the next slide to understand what you've done.</p>
+						<pre><code>
+a = 6
+a
+b = 3
+b
+c = a
+c
+						</code></pre>
+					</section>
+					<section>
+						<video controls preload>
+  							<source src="video/Variables_1.mp4"  type='video/mp4'>
+  							<source src="video/Variables_1.webm" type='video/webm; codecs="vp8, vorbis"'>
+  							<source src="video/Variables_1.ogv"  type='video/ogg; codecs="theora, vorbis"'>
+						</video>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>		
+					</section>
+
+				</section>
+
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
