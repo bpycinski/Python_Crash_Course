@@ -40,11 +40,11 @@
 			<div class="slides">
 				<section>
 					<h1>A Crash Course in Python</h1>
-					<p>
+					<h5>
 						<small>Created by <a href="http://coding2learn.org">Marc Scott</a> / <a href="http://twitter.com/coding2learn">@coding2learn</a></small>
 						<small>using <a href="https://github.com/hakimel/reveal.js">reveal.js</a></small>
 					</br><small><a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">How The Internet Works</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.coding2learn.org" property="cc:attributionName" rel="cc:attributionURL">Marc Scott</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.</small>
-					</p>
+					</h5>
 				</section>
 
 				<section>
@@ -371,13 +371,276 @@ a += 100
 '6' + 4
 						</code></pre>
 						<p>When you add strings you concatenate them. This is a fancy word for <em>join</em> them.</p>
+						<p>You'll have noticed (I hope) that when you try and add a string to an integer, you get an error.</p>
 						<p>Try this:</p>
 						<pre><code>
 'hello' + 'world!'
 'hello ' + 'world!'
-
+						</code></pre>
  					</section>
 				</section>
+
+				<section>
+					<section>
+						<h1>Print</h1>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>Creating Scripts</h2>
+						<p>In the interpreter, IDLE will feedback whatever we have just entered.</p>
+						<p>If we type <code>"Hello World!"</code> then the interpreter will spit it out right back at us.</p>
+						<p>However, if we want to write some code and keep it, we're going top need to create and save a script.</p>
+						<p>To create an empty file, just go to <em>File</em> and <em>New Window</em></p>
+						<p>Let's save it straight away as <code>HelloWorld.py</code> (DON"T FORGET THE .py)</p>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+
+					<section>
+						<h2>Your first program</h2>
+						<p>Most programmer, when learning a new language, will write the "Hello World!" program. So we're going to do the same.</p>
+						<p>Watch the video and follow along.</p>
+						<video controls preload>
+  							<source src="video/HelloWorld.mp4"  type='video/mp4'>
+  							<source src="video/HelloWorld.webm" type='video/webm; codecs="vp8, vorbis"'>
+  							<source src="video/HelloWorld.ogv"  type='video/ogg; codecs="theora, vorbis"'>
+						</video>
+						</br><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>More Hello World!</h2>
+						<p>Have a go at coding more Hello World! programs as you follow along with the video below.</p>
+						<video controls preload>
+  							<source src="video/More_HelloWorld.mp4"  type='video/mp4'>
+  							<source src="video/More_HelloWorld.webm" type='video/webm; codecs="vp8, vorbis"'>
+  							<source src="video/More_HelloWorld.ogv"  type='video/ogg; codecs="theora, vorbis"'>
+						</video>
+						</br><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+				</section>
+			
+				<section>
+					<section>
+						<h1>Input</h1>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>input</h2>
+						<p>We can use the input function to let the user interact with the program. input lets the user of the program type in numbers that the program can use.</p>
+						<p>Try creating a new program (New Window) and saving it as give_me_a_number.py</p>
+						<p>Then type out these lines of code and run your program.</p>
+						<pre><code>
+my_num = input("Please type any number ")
+print 'Thanks for the', my_num
+						</code></pre>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+
+					<section>
+						<h2>An adding machine</h2>
+						<p>We want to make an adding machine, where the user gets to type in two numbers and the program adds them together and displays the result.</p>
+						<p>Have a go at it now, and if you get stuck then look at the slides below.</p>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+
+					<section>
+						<h2>What we need.</h2>
+						<p>Your program is going to need to do the following:</p>
+						<ol>
+							<li>Assign a variable (called first_number,maybe) and assign it to an input asking for a number.</li>
+							<li>Assign a variable (second_number might be sensible) and assign it to an input asking for another number.</li>
+							<li>Assign a third variable (result, perhaps), that is the sum of the previous two variables.</li>
+							<li>Print out the result when those two numbers are added together.</li>
+						</ol>
+						<p>If you need help, then follow along with the video below.</p>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>Here's what to do.</h2>
+						<video controls preload>
+  							<source src="video/Adding_Machine.mp4"  type='video/mp4'>
+  							<source src="video/Adding_Machine.webm" type='video/webm; codecs="vp8, vorbis"'>
+  							<source src="video/Adding_Machine.ogv"  type='video/ogg; codecs="theora, vorbis"'>
+						</video>
+						</br><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Your first test.</h1>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>Task</h2>
+						<ol>
+						<li>Create a program that will ask the user to enter two numbers</li>
+						<li>The program should then calculate what percentage the second number is of the first.</li>
+						<li>The percentage should be printed out.</li>
+						</ol>
+						<p>Example output from the interpreter is provided below.</p>
+						<pre><code>
+>>> 
+Give me a number: 200
+Give me another: 20
+20 is 10% of 200
+>>>
+						</code></pre>
+						<p>Once you've done, get your teacher to check your code.</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>raw_input</h1>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>Entering strings</h2>
+						<p>Try the following in the interpreter.</p>
+						<pre><code>
+>>> random_var = input('Give me a string: ')
+Give me a string: Hello World!
+						</code></pre>
+						<p>You should get something back like this:</p>
+						<pre><code>
+Traceback (most recent call last):
+  File "<pyshell#27>", line 1, in <module>
+    random_var = input('Give me a string: ')
+  File "<string>", line 1
+    Hello World!
+              ^
+SyntaxError: invalid syntax
+					</code></pre>
+					<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<p>input is just used for numbers. If you try and feed it strings then you get a Traceback error.</p>
+						<p>If we want the user to enter strings, then we need to use raw_input.</p>
+						<p>Create a new file called Hello_user.py and enter these lines of code.</p>
+						<pre><code>
+name = raw_input("Hi there, what's your name? ")
+print 'Hello',name,",it's great to meet you"
+						</code></pre>
+						<em>WATCH OUT FOR THE '' and "". AS WE'RE NOW USING APOSTROPHES</em>
+						</br><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h4>If you get stuck, here's a video to help you out.</h4>
+						<video controls preload>
+  							<source src="video/Hello_user.mp4"  type='video/mp4'>
+  							<source src="video/Hello_user.webm" type='video/webm; codecs="vp8, vorbis"'>
+  							<source src="video/Hello_user.ogv"  type='video/ogg; codecs="theora, vorbis"'>
+						</video>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Conditionals</h1>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>if, else and elif</h2>
+						<p>So far our programs have been pretty linear. Conditionals allow the program to run different bits of code, depending on whether certain conditions have been met.</p>
+						<p>We use if, elif (short for else-if) and else for conditionals.</p>
+						<p>An everyday example might be the following.</p>
+						<pre><code>
+Look outside
+if it is sunny
+    pick up sunglasses
+    go outside
+elif it is rainy
+    pick up umbrella
+    go outside
+else
+    go outside
+						</code></pre>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>Equality</h2>
+						<p>Before we tackle conditionals, you need to understand the difference between assignment and equality.</p>
+						<p>In Python, if we write:</p>
+						<pre><code>
+foo = 6
+						</code></pre>
+						<p>we are assigning the value <code>6</code> to the variable <code>foo</code></p>
+						<p>If we write:</p>
+						<pre><code>
+foo == 10
+						</code></pre>
+						<p>We are checking if <code>foo</code> is equal to <code>10</code> or not.</p>							
+						<p>Watch the video on the next slide and code along with it.</p>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<video controls preload>
+  							<source src="video/Equality.mp4"  type='video/mp4'>
+  							<source src="video/Equality.webm" type='video/webm; codecs="vp8, vorbis"'>
+  							<source src="video/Equality.ogv"  type='video/ogg; codecs="theora, vorbis"'>
+						</video>
+						</br><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>Using equality testing in conditionals</h2>
+						<p>Have a look at the code below. Try it out in a new file called something like password_checker.py</p>
+						<pre><code>
+password = 'correct horse battery staple'
+pass_attempt = raw_input('What is the password? ')
+if pass_attempt == password:
+    print 'Correct. Access granted'
+else:
+    print 'Access Denied'
+						</code></pre>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<img src="http://imgs.xkcd.com/comics/password_strength.png">
+						</br><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>Syntax of Conditionals</h2>
+						<p>The general syntax of conditionals goes like this:</p>
+						<pre><code>
+if something == somethingelse:
+    do this
+elif something == somethingdifferent:
+    do this
+else:
+    do this
+					</code></pre>
+					<p>Notice the <code>:</code> at the end of the conditional line.</p>
+					<p>Also notice the indentation on the following lines. This indentation is important.</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Your Second Test</h1>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>The Task</h2>
+						<p>Create a computing quiz that asks the user 10 questions and keeps a score of how many they got correct.</p>
+						<p>Look back over the slide to get ideas for questions.</p>
+						<p>The score should be printed out at the end.</p>
+						<p>Get your teacher to check your program when you have finished.</p>
+						<p>The first part of the quiz has been done for you.</p>
+						<pre><code>
+score = 0
+answer1 = raw_input('What is the name of the IDE we are using for Python? ')
+if answer1 == 'IDLE':
+    print 'Well done'
+    score += 1
+elif answer1 == 'idle':
+    print 'Well done'
+    score += 1
+else:
+    print 'Sorry, that was incorrect'
+					</section>
+				</section>
+
+
 
 
 

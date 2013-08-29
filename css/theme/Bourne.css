@@ -30,6 +30,10 @@ table.center {
     margin-right:auto;
   }
 
+p {
+  text-align: left;
+}
+
 .reveal table,
 .reveal th,
 .reveal td{
