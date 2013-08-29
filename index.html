@@ -185,7 +185,7 @@
 						<pre><code>
 5.0 / 2.0
 5 / 2.0
-5.0 / 20 				</code></pre>
+5.0 / 2.0 				</code></pre>
 						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
@@ -195,7 +195,7 @@
 					</section>
 					<section>
 						<h2>The problem with Floats</h2>
-						<p>Floats aren't always accurate. This might seem strange as you'd have thought computers would be precise, but because computers work using binary numbers (1 or 0), they can't use real numbers precisely. Try the example below in the interpreter.</p>
+						<p>Floats aren't always accurate. This might seem strange as you'd have thought computers would be precise, but because computers work using binary numbers (1s or 0s), they can't use real numbers precisely. Try the example below in the interpreter.</p>
 						<pre><code>
 0.1 + 0.2
 						</code></pre>
@@ -206,6 +206,9 @@
 				<section>
 					<section>
 						<h1>Data Types (3)</h1>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
 						<p>You can always find out what data type you have, by using the <code>type()</code> function.</p>
 						<p>Try this in your interpreter:</p>
 						<pre><code>
@@ -230,7 +233,7 @@ type(0.5)
 				<section>
 					<section>
 						<h1>Variables</h1>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>		
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<p>You may have seen variables before in Scratch.</p>
@@ -255,6 +258,7 @@ b
 c = a
 c
 						</code></pre>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<video controls preload>
@@ -262,10 +266,119 @@ c
   							<source src="video/Variables_1.webm" type='video/webm; codecs="vp8, vorbis"'>
   							<source src="video/Variables_1.ogv"  type='video/ogg; codecs="theora, vorbis"'>
 						</video>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>		
+						</br><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>		
 					</section>
-
 				</section>
+				<section>
+					<section>
+					<h1>Reassigning Variables (1)</h1>
+					<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<p>We can reassign variables quite easily in Python.</p>
+						<p>Say we had written the following line of code.</p>
+						<pre><code>
+a = 10
+						</code></pre>
+						<p>The we wanted to change <code>a</code> so it represented a different value.</p>
+						<p>We could then write this:</p>
+						<pre><code>
+a = 20
+						</code></pre>
+						<p>Try it out.</p>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<p>Watch the video below and try to predict what will happen.</p>
+						<video controls preload>
+  							<source src="video/Variable_reassignment_1.mp4"  type='video/mp4'>
+  							<source src="video/Variable_reassignment_1.webm" type='video/webm; codecs="vp8, vorbis"'>
+  							<source src="video/Variable_reassignment_1.ogv"  type='video/ogg; codecs="theora, vorbis"'>
+						</video>
+						</br><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<p>Here's a quick explanation</p>
+						<video controls preload>
+  							<source src="video/Variable_reassignment_2.mp4"  type='video/mp4'>
+  							<source src="video/Variable_reassignment_2.webm" type='video/webm; codecs="vp8, vorbis"'>
+  							<source src="video/Variable_reassignment_2.ogv"  type='video/ogg; codecs="theora, vorbis"'>
+						</video>
+						</br><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<p>Did you predict correctly?</p>
+						<video controls preload>
+  							<source src="video/Variable_reassignment_3.mp4"  type='video/mp4'>
+  							<source src="video/Variable_reassignment_3.webm" type='video/webm; codecs="vp8, vorbis"'>
+  							<source src="video/Variable_reassignment_3.ogv"  type='video/ogg; codecs="theora, vorbis"'>
+						</video>
+						</br><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Reassigning variables (2)</h1>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>We can reassign a variable by </br>referencing itself.</h2>
+						<p>Try typing the following lines of code into the interpreter.</p>
+						<pre><code>
+a = 100
+a
+a = a + 100
+a
+						</code></pre>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<p>Typing <code>a = a + 100</code> each time is a bit time consuming. We can type this instead:</p>
+						<pre><code>
+a += 100
+						</code></pre>
+						<p>This is easier, but either way is acceptable.</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Strings</h1>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2><code>""</code> or <code>''</code></h2>
+						<p>Strings are just characters.</p>
+						<p>We surround strings in <code>""</code> or <code>''</code>. So <code>"cat"</code> is a string as is <code>'dog'</code></p>
+						<p>While <code>6</code> is an integer <code>"6"</code> is a string.</p>
+						<p>We can either <code>""</code> or <code>''</code> to surround a string.</p>
+						<p>If we wanted Python to use the sentence <em>I'm a student</em>:</p>
+						<pre><code>
+"I'm a student"
+						</pre></code>
+						<p>If we wanted Python to use the sentence <em>She said "I like this"</em>:</p>
+						<pre><code>
+'She said "I like this"'
+						</code></pre>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section>
+						<h2>Adding Strings</h2>
+						<p>Try typing the following into your interpreter:</p>
+						<pre><code>
+6 + 4
+'6' + '4'
+'6' + 4
+						</code></pre>
+						<p>When you add strings you concatenate them. This is a fancy word for <em>join</em> them.</p>
+						<p>Try this:</p>
+						<pre><code>
+'hello' + 'world!'
+'hello ' + 'world!'
+
+ 					</section>
+				</section>
+
 
 
 
