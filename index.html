@@ -60,13 +60,13 @@
 				<section>
 					<section>
 						<h1>Using Python</h1>
-						<br/><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<h2>It's just text.</h2>
 						<p>Like most programming languages, you can write Python programs using any text editor.</p>
-						<p>You just need to make sure that you save your files with the extension <code>.py</code>
-					<br/><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<p>You just need to make sure that you save your files with the extension <code>.py</code></p>
+					</br><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<h2>IDLE</h2>
@@ -97,10 +97,10 @@
 					</section>
 					<section>
 						<h2>Operators</h2>
-						<p>Python can be used to perform calculations, using what are called <em>operators</em>.</p>
+						<p>Python can be used to perform calculations using <em>operators</em>.</p>
 						<p>Operators are just a word for things like + and -.</p>
 						<p>We call the the things we're using operators on (in this case numbers) <em>operands</em>.
-						<p>Try typing the following in the interpreter and hitting Enter after each one.</p>
+						<p>Try typing the following in the interpreter.</p>
 						<pre><code>
 6 + 3
 6 - 3
@@ -111,8 +111,7 @@
 					</section>
 					<section>
 						<h2>Arithmetic operators</h2>
-						<p>Here's a table of the operators that we can use to do some basic maths.</p>
-						<p>If a = 10 and b = 20 then:</p>
+						<p>Here's a table of the operators that we can use to do some basic maths. For instance if a = 10 and b = 20 then:</p>
 						<small><table>
 						<tbody><tr>
 						<th>Operator</th><th>Description</th><th>Example</th>
@@ -152,18 +151,15 @@
 					</section>
 					<section>
 						<h2>Integers</h2>
-						<p>Did you find a calculation that didn't give a correct answer?</p>
-						<p>If not, then try this calculation.</p>
-						<pre><code>
-5 / 2
-						</code></pre>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
-					</section>
-					<section>
-						<h2>Integers</h2>
 						<p>Integers are whole numbers like 1, 5, 1000, -7.</p>
-						<p>In Python (and many other languages) if you perform a calculation on an integer, you always get an integer back.</p>
-						<p>We know that 5 / 2 = 2.5, but 2.5 is not an integer. Python just ditches the .5 and returns 2.</p>
+						<p>In some other languages if you perform a calculation on an integer, you always get an integer back.</p>
+						<p>This doesn't happen with normal division in Python 3, but we can use a special operator to make it happen.</p>
+						<pre><code>
+5//2
+2//5
+10//3
+						</code></pre>
+						<p>The <code>//</code> operator performs an <em>integer division</em>. This can be very useful, and you'll find out why on the next slides.</p>
 					</section>
 				</section>
 
@@ -180,17 +176,7 @@
 					</section>
 					<section>
 						<h2>Using Floating point numbers</h2>
-						<p>Going back to our 5 / 2 calculation. If we want an answer to be a floating point number (from here on in a <em>float</em>) we need to use at least one float in our calculation.</p>
-						<p>Try these calculations.</p>
-						<pre><code>
-5.0 / 2.0
-5 / 2.0
-5.0 / 2.0 				</code></pre>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
-					</section>
-					<section>
-						<h2>Floats</h2>
-						<p>As long as we use one or more floats in our calculations, then Python will return a float.</p>
+						<p>When we calculate 5 / 2 the answer is a floating point number (from here on in a <em>float</em>)</p>
 						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
@@ -199,7 +185,7 @@
 						<pre><code>
 0.1 + 0.2
 						</code></pre>
-						<p>This is why we should try and limit our use of floats.</p>
+						<p>This is why we should try and limit our use of floats. One way of limiting the use of floats is to use integer division with the // operator.</p>
 					</section>
 				</section>
 
@@ -224,7 +210,7 @@ type(0.5)
 							<li>"Hello world"</li>
 							<li>True</li>
 							<li>False</li>
-							<li>12345678987654321</li>
+							<li>(1,2,3)</li>
 						</ol>
 						<p>Don't worry too much about these yet, we'll cover them in detail later.</p>
 					</section>
@@ -349,15 +335,11 @@ a += 100
 					<section>
 						<h2><code>""</code> or <code>''</code></h2>
 						<p>Strings are just characters.</p>
-						<p>We surround strings in <code>""</code> or <code>''</code>. So <code>"cat"</code> is a string as is <code>'dog'</code></p>
-						<p>While <code>6</code> is an integer <code>"6"</code> is a string.</p>
+						<p>We surround strings in <code>""</code> or <code>''</code>. So <code>"cat"</code> is a string as is <code>'dog'</code> While <code>6</code> is an integer <code>"6"</code> is a string.</p>
 						<p>We can either <code>""</code> or <code>''</code> to surround a string.</p>
-						<p>If we wanted Python to use the sentence <em>I'm a student</em>:</p>
+						<p>Here's a couple of examples of when <code>"</code>and <code>'</code> can be useful.
 						<pre><code>
 "I'm a student"
-						</pre></code>
-						<p>If we wanted Python to use the sentence <em>She said "I like this"</em>:</p>
-						<pre><code>
 'She said "I like this"'
 						</code></pre>
 						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
@@ -397,9 +379,8 @@ a += 100
 
 					<section>
 						<h2>Your first program</h2>
-						<p>Most programmer, when learning a new language, will write the "Hello World!" program. So we're going to do the same.</p>
-						<p>Watch the video and follow along.</p>
-						<video controls preload>
+						<p>Follow along with the video</p>
+						<video width="75%" controls preload>
   							<source src="video/HelloWorld.mp4"  type='video/mp4'>
   							<source src="video/HelloWorld.webm" type='video/webm; codecs="vp8, vorbis"'>
   							<source src="video/HelloWorld.ogv"  type='video/ogg; codecs="theora, vorbis"'>
@@ -409,12 +390,11 @@ a += 100
 					<section>
 						<h2>More Hello World!</h2>
 						<p>Have a go at coding more Hello World! programs as you follow along with the video below.</p>
-						<video controls preload>
+						<video width="75%" controls preload>
   							<source src="video/More_HelloWorld.mp4"  type='video/mp4'>
   							<source src="video/More_HelloWorld.webm" type='video/webm; codecs="vp8, vorbis"'>
   							<source src="video/More_HelloWorld.ogv"  type='video/ogg; codecs="theora, vorbis"'>
 						</video>
-						</br><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
 					</section>
 				</section>
 			
@@ -425,33 +405,26 @@ a += 100
 					</section>
 					<section>
 						<h2>input</h2>
-						<p>We can use the input function to let the user interact with the program. input lets the user of the program type in numbers that the program can use.</p>
-						<p>Try creating a new program (New Window) and saving it as give_me_a_number.py</p>
+						<p>We can use the input function to let the user interact with the program. input lets the user of the program type in strings.</p>
+						<p>Try creating a new program (New Window) and saving it as giveMeALetter.py</p>
 						<p>Then type out these lines of code and run your program.</p>
 						<pre><code>
-my_num = input("Please type any number ")
-print 'Thanks for the', my_num
+my_char = input("Please type any letter ")
+print 'Thanks for the', my_char
 						</code></pre>
 						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
 					</section>
-
+					<section>
+						<p>Now try the following.</p>
+						<video controls preload>
+  							<source src="video/Hello_user.mp4"  type='video/mp4'>
+  							<source src="video/Hello_user.webm" type='video/webm; codecs="vp8, vorbis"'>
+  							<source src="video/Hello_user.ogv"  type='video/ogg; codecs="theora, vorbis"'>
+						</video>
+					</section>
 					<section>
 						<h2>An adding machine</h2>
 						<p>We want to make an adding machine, where the user gets to type in two numbers and the program adds them together and displays the result.</p>
-						<p>Have a go at it now, and if you get stuck then look at the slides below.</p>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
-					</section>
-
-					<section>
-						<h2>What we need.</h2>
-						<p>Your program is going to need to do the following:</p>
-						<ol>
-							<li>Assign a variable (called first_number,maybe) and assign it to an input asking for a number.</li>
-							<li>Assign a variable (second_number might be sensible) and assign it to an input asking for another number.</li>
-							<li>Assign a third variable (result, perhaps), that is the sum of the previous two variables.</li>
-							<li>Print out the result when those two numbers are added together.</li>
-						</ol>
-						<p>If you need help, then follow along with the video below.</p>
 						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
@@ -461,7 +434,6 @@ print 'Thanks for the', my_num
   							<source src="video/Adding_Machine.webm" type='video/webm; codecs="vp8, vorbis"'>
   							<source src="video/Adding_Machine.ogv"  type='video/ogg; codecs="theora, vorbis"'>
 						</video>
-						</br><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
 					</section>
 				</section>
 
@@ -491,51 +463,6 @@ Give me another: 20
 
 				<section>
 					<section>
-						<h1>raw_input</h1>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
-					</section>
-					<section>
-						<h2>Entering strings</h2>
-						<p>Try the following in the interpreter.</p>
-						<pre><code>
->>> random_var = input('Give me a string: ')
-Give me a string: Hello World!
-						</code></pre>
-						<p>You should get something back like this:</p>
-						<pre><code>
-Traceback (most recent call last):
-  File "<pyshell#27>", line 1, in <module>
-    random_var = input('Give me a string: ')
-  File "<string>", line 1
-    Hello World!
-              ^
-SyntaxError: invalid syntax
-					</code></pre>
-					<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
-					</section>
-					<section>
-						<p>input is just used for numbers. If you try and feed it strings then you get a Traceback error.</p>
-						<p>If we want the user to enter strings, then we need to use raw_input.</p>
-						<p>Create a new file called Hello_user.py and enter these lines of code.</p>
-						<pre><code>
-name = raw_input("Hi there, what's your name? ")
-print 'Hello',name,",it's great to meet you"
-						</code></pre>
-						<em>WATCH OUT FOR THE '' and "". AS WE'RE NOW USING APOSTROPHES</em>
-						</br><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
-					</section>
-					<section>
-						<h4>If you get stuck, here's a video to help you out.</h4>
-						<video controls preload>
-  							<source src="video/Hello_user.mp4"  type='video/mp4'>
-  							<source src="video/Hello_user.webm" type='video/webm; codecs="vp8, vorbis"'>
-  							<source src="video/Hello_user.ogv"  type='video/ogg; codecs="theora, vorbis"'>
-						</video>
-					</section>
-				</section>
-
-				<section>
-					<section>
 						<h1>Conditionals</h1>
 						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
 					</section>
@@ -548,12 +475,8 @@ print 'Hello',name,",it's great to meet you"
 Look outside
 if it is sunny
     pick up sunglasses
-    go outside
-elif it is rainy
-    pick up umbrella
-    go outside
 else
-    go outside
+    pick up umbrella
 						</code></pre>
 						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
 					</section>
@@ -588,9 +511,9 @@ foo == 10
 password = 'correct horse battery staple'
 pass_attempt = raw_input('What is the password? ')
 if pass_attempt == password:
-    print 'Correct. Access granted'
+    print ('Correct. Access granted')
 else:
-    print 'Access Denied'
+    print ('Access Denied')
 						</code></pre>
 						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
 					</section>
@@ -622,7 +545,6 @@ else:
 					<section>
 						<h2>The Task</h2>
 						<p>Create a computing quiz that asks the user 10 questions and keeps a score of how many they got correct.</p>
-						<p>Look back over the slide to get ideas for questions.</p>
 						<p>The score should be printed out at the end.</p>
 						<p>Get your teacher to check your program when you have finished.</p>
 						<p>The first part of the quiz has been done for you.</p>
@@ -630,15 +552,18 @@ else:
 score = 0
 answer1 = raw_input('What is the name of the IDE we are using for Python? ')
 if answer1 == 'IDLE':
-    print 'Well done'
+    print ('Well done')
     score += 1
 elif answer1 == 'idle':
-    print 'Well done'
+    print ('Well done')
     score += 1
 else:
-    print 'Sorry, that was incorrect'
+    print ('Sorry, that was incorrect')</code></pre>
 					</section>
 				</section>
+
+
+				<section> <style type="text/css">background</style><iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=x+%3D+0%0Awhile+x+%3C10%3A%0A++++print(x)%0A++++x%2B%3D1&cumulative=false&heapPrimitives=false&drawParentPointers=false&textReferences=false&showOnlyOutputs=false&py=3&curInstr=32&codeDivWidth=350&codeDivHeight=400"> </iframe></section>
 
 
 
