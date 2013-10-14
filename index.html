@@ -33,6 +33,7 @@
 	<body>
 		<a href="http://www.bourne-grammar.lincs.sch.uk"><img src="images/logo.png"></img></a>
 		<a href="https://github.com/MarcScott/Python_Crash_Course"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+		<a href="#/contents"><img style="position: absolute; left: 50%; margin-left: -30px; border: 0;" src="images/home.png" width = "60px" alt="Home"></a>
 
 		<div class="reveal">
 
@@ -47,41 +48,65 @@
 					</h5>
 				</section>
 
+				<section id='contents'>
+					<h2>Contents</h2>
+					<ol>
+						<li><a href="#/intro">Introduction</a></li>
+						<li><a href="#/calc">Python calculator</a></li>
+						<li><a href="#/data1">Data Types (1)</a></li>
+						<li><a href="#/data2">Data Types (2)</a></li>
+						<li><a href="#/data3">Data Types (3)</a></li>
+						<li><a href="#/vars">Variables</a></li>
+						<li><a href="#/reassign1">Reassigning variables (1)</a></li>
+						<li><a href="#/reassign2">Reassigning variables (2)</a></li>
+						<li><a href="#/strings">Strings</a></li>
+						<li><a href="#/print">Printing</a></li>
+						<li><a href="#/input">Input</a></li>
+						<li><a href="#/test1">First Test</a></li>
+						<li><a href="#/conditionals">Conditionals</a></li>
+						<li><a href="#/test2">Second Test</a></li>
+					</ol>
+				</section>
+
 				<section>
 					<iframe src="http://player.vimeo.com/video/50322369" width="500" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/50322369">PyConUK - Programmer Pythonical Song</a> from <a href="http://vimeo.com/user11414553">Hawkz</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 				</section>
 
-				<section>
-					<h2>What is Python?</h2>
-					<p>Python is a programming language.</p>
-					<p>A programming language is a language designed to communicate instructions to a computer. Programming languages can be used to create programs that control the behavior of a computer.</p>
-				</section>
-
-				<section>
+				<section id="intro">
 					<section>
-						<h1>Using Python</h1>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<h1>Introduction</h1>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
+					<section>
+						<h2>What is Python?</h2>
+						<p>Python is a programming language.</p>
+						<p>A programming language is a language designed to communicate instructions to a computer. Programming languages can be used to create programs that control the behavior of a computer.</p>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
+					</section>
+
 					<section>
 						<h2>It's just text.</h2>
 						<p>Like most programming languages, you can write Python programs using any text editor.</p>
 						<p>You just need to make sure that you save your files with the extension <code>.py</code></p>
-					</br><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					</br><a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
+
 					<section>
 						<h2>IDLE</h2>
 						<p>We're going to use an IDE to write our Python programs.</p>
 						<p>IDE stands for Interactive Development Environment.</p>
 						<p>An IDE makes coding easier as it can recognise the language you are using and provide hints.</p>
 						<p>The IDE we'll use is called IDLE. It's a very simple IDE designed to code Python in.</p>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
+
 					<section>
 						<h2>Loading IDLE</h2>
 						<p>Find IDLE on your computer and start it up. You should see something like this.</p>
 						<img src="images/interpreter.png"></img>
-						<br/><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<br/><a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
+
 					<section>
 						<h2>The Interpreter.</h2>
 						<p>What you are looking at is a Python interpreter. An interpreter lets us write lines of code that are instantly run.</p>
@@ -89,11 +114,11 @@
 					</section>
 				</section>
 
-				<section>
+				<section id = 'calc'>
 					<section>
 						<h1>Python as a</h1>
 						<h1>calculator</h1>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<h2>Operators</h2>
@@ -107,7 +132,7 @@
 6 * 3
 6 / 3
 						</code></pre>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<h2>Arithmetic operators</h2>
@@ -135,7 +160,7 @@
 						<td>**</td><td>Power calculation</td><td> a**b will give 10 to the power 20</td>
 						</tr>
 						</tbody></table></small>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<h2>Playing with operators.</h2>
@@ -144,10 +169,10 @@
 					</section>
 				</section>
 
-				<section>
+				<section id='data1'> 
 					<section>
 						<h1>Data Types (1)</h1>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<h2>Integers</h2>
@@ -163,21 +188,21 @@
 					</section>
 				</section>
 
-				<section>
+				<section id = 'data2'>
 					<section>
 						<h1>Data Types (2)</h1>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<h2>Floating point numbers</h2>
 						<p>Floating point numbers are <em>representations</em> of real numbers like 2.5, 3.7 or 1.0</p>
 						<p>The representation part is important. Computers (for reasons you'll learn later) struggle with real numbers, so sometimes they are inaccurate.</p>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<h2>Using Floating point numbers</h2>
 						<p>When we calculate 5 / 2 the answer is a floating point number (from here on in a <em>float</em>)</p>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<h2>The problem with Floats</h2>
@@ -189,10 +214,10 @@
 					</section>
 				</section>
 
-				<section>
+				<section id='data3'>
 					<section>
 						<h1>Data Types (3)</h1>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<p>You can always find out what data type you have, by using the <code>type()</code> function.</p>
@@ -201,7 +226,7 @@
 type(5)
 type(0.5)
 						</pre></code>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<h2>Other data types</h2>
@@ -216,10 +241,10 @@ type(0.5)
 					</section>
 				</section>
 
-				<section>
+				<section id='vars'>
 					<section>
 						<h1>Variables</h1>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<p>You may have seen variables before in Scratch.</p>
@@ -231,7 +256,7 @@ a
 a + a
 a - a
 						</code></pre>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>		
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>		
 					</section>
 					<section>
 						<h2>So what are variables.</h2>
@@ -244,21 +269,17 @@ b
 c = a
 c
 						</code></pre>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
-					<section>
-						<video controls preload>
-  							<source src="video/Variables_1.mp4"  type='video/mp4'>
-  							<source src="video/Variables_1.webm" type='video/webm; codecs="vp8, vorbis"'>
-  							<source src="video/Variables_1.ogv"  type='video/ogg; codecs="theora, vorbis"'>
-						</video>
-						</br><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>		
+					<section> <!--Variables 1-->
+						<iframe width="420" height="315" src="http://www.youtube.com/embed/o5JvDg9XPQ0?rel=0" frameborder="0" allowfullscreen></iframe>
+						</br><a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>		
 					</section>
 				</section>
-				<section>
+				<section id="reassign1">
 					<section>
 					<h1>Reassigning Variables (1)</h1>
-					<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<p>We can reassign variables quite easily in Python.</p>
@@ -272,41 +293,29 @@ a = 10
 a = 20
 						</code></pre>
 						<p>Try it out.</p>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
-					<section>
+					<section> <!--Variable reassignmnet1-->
 						<p>Watch the video below and try to predict what will happen.</p>
-						<video controls preload>
-  							<source src="video/Variable_reassignment_1.mp4"  type='video/mp4'>
-  							<source src="video/Variable_reassignment_1.webm" type='video/webm; codecs="vp8, vorbis"'>
-  							<source src="video/Variable_reassignment_1.ogv"  type='video/ogg; codecs="theora, vorbis"'>
-						</video>
-						</br><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<iframe width="420" height="315" src="http://www.youtube.com/embed/Cum-F4hVl_o?rel=0" frameborder="0" allowfullscreen></iframe>
+						</br><a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
-					<section>
+					<section><!--Variable reassignmnet 2-->
 						<p>Here's a quick explanation</p>
-						<video controls preload>
-  							<source src="video/Variable_reassignment_2.mp4"  type='video/mp4'>
-  							<source src="video/Variable_reassignment_2.webm" type='video/webm; codecs="vp8, vorbis"'>
-  							<source src="video/Variable_reassignment_2.ogv"  type='video/ogg; codecs="theora, vorbis"'>
-						</video>
-						</br><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<iframe width="420" height="315" src="http://www.youtube.com/embed/77d641mHS9U?rel=0" frameborder="0" allowfullscreen></iframe>
+						</br><a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
-					<section>
+					<section><!--Variable reassignment 3-->
 						<p>Did you predict correctly?</p>
-						<video controls preload>
-  							<source src="video/Variable_reassignment_3.mp4"  type='video/mp4'>
-  							<source src="video/Variable_reassignment_3.webm" type='video/webm; codecs="vp8, vorbis"'>
-  							<source src="video/Variable_reassignment_3.ogv"  type='video/ogg; codecs="theora, vorbis"'>
-						</video>
-						</br><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<iframe width="420" height="315" src="http://www.youtube.com/embed/SAvajn2Eo1M?rel=0" frameborder="0" allowfullscreen></iframe>
+						</br><a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 				</section>
 
-				<section>
+				<section id='reassign2'>
 					<section>
 						<h1>Reassigning variables (2)</h1>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<h2>We can reassign a variable by </br>referencing itself.</h2>
@@ -317,7 +326,7 @@ a
 a = a + 100
 a
 						</code></pre>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<p>Typing <code>a = a + 100</code> each time is a bit time consuming. We can type this instead:</p>
@@ -327,10 +336,10 @@ a += 100
 						<p>This is easier, but either way is acceptable.</p>
 					</section>
 				</section>
-				<section>
+				<section id='strings'>
 					<section>
 						<h1>Strings</h1>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<h2><code>""</code> or <code>''</code></h2>
@@ -342,7 +351,7 @@ a += 100
 "I'm a student"
 'She said "I like this"'
 						</code></pre>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<h2>Adding Strings</h2>
@@ -362,10 +371,10 @@ a += 100
  					</section>
 				</section>
 
-				<section>
+				<section id="print">
 					<section>
-						<h1>Print</h1>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<h1>Printing</h1>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<h2>Creating Scripts</h2>
@@ -374,34 +383,26 @@ a += 100
 						<p>However, if we want to write some code and keep it, we're going top need to create and save a script.</p>
 						<p>To create an empty file, just go to <em>File</em> and <em>New Window</em></p>
 						<p>Let's save it straight away as <code>HelloWorld.py</code> (DON"T FORGET THE .py)</p>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 
-					<section>
+					<section><!--HelloWorld-->
 						<h2>Your first program</h2>
 						<p>Follow along with the video</p>
-						<video width="75%" controls preload>
-  							<source src="video/HelloWorld.mp4"  type='video/mp4'>
-  							<source src="video/HelloWorld.webm" type='video/webm; codecs="vp8, vorbis"'>
-  							<source src="video/HelloWorld.ogv"  type='video/ogg; codecs="theora, vorbis"'>
-						</video>
-						</br><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<iframe width="420" height="315" src="http://www.youtube.com/embed/zp0rNogb9MQ?rel=0" frameborder="0" allowfullscreen></iframe>
+						</br><a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
-					<section>
+					<section><!--More HelloWorld-->
 						<h2>More Hello World!</h2>
 						<p>Have a go at coding more Hello World! programs as you follow along with the video below.</p>
-						<video width="75%" controls preload>
-  							<source src="video/More_HelloWorld.mp4"  type='video/mp4'>
-  							<source src="video/More_HelloWorld.webm" type='video/webm; codecs="vp8, vorbis"'>
-  							<source src="video/More_HelloWorld.ogv"  type='video/ogg; codecs="theora, vorbis"'>
-						</video>
+						<iframe width="420" height="315" src="http://www.youtube.com/embed/zvfebx6wjzw?rel=0" frameborder="0" allowfullscreen></iframe>
 					</section>
 				</section>
 			
-				<section>
+				<section id='input'>
 					<section>
 						<h1>Input</h1>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<h2>input</h2>
@@ -412,35 +413,27 @@ a += 100
 my_char = input("Please type any letter ")
 print 'Thanks for the', my_char
 						</code></pre>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
-					<section>
+					<section><!--Hello User-->
 						<p>Now try the following.</p>
-						<video controls preload>
-  							<source src="video/Hello_user.mp4"  type='video/mp4'>
-  							<source src="video/Hello_user.webm" type='video/webm; codecs="vp8, vorbis"'>
-  							<source src="video/Hello_user.ogv"  type='video/ogg; codecs="theora, vorbis"'>
-						</video>
+						<iframe width="420" height="315" src="http://www.youtube.com/embed/ZxBQID_XBuU?rel=0" frameborder="0" allowfullscreen></iframe>
 					</section>
 					<section>
 						<h2>An adding machine</h2>
 						<p>We want to make an adding machine, where the user gets to type in two numbers and the program adds them together and displays the result.</p>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
-					<section>
+					<section><!--Adding Machine-->
 						<h2>Here's what to do.</h2>
-						<video controls preload>
-  							<source src="video/Adding_Machine.mp4"  type='video/mp4'>
-  							<source src="video/Adding_Machine.webm" type='video/webm; codecs="vp8, vorbis"'>
-  							<source src="video/Adding_Machine.ogv"  type='video/ogg; codecs="theora, vorbis"'>
-						</video>
+						<iframe width="420" height="315" src="http://www.youtube.com/embed/CjtCOJ9yoIs?rel=0" frameborder="0" allowfullscreen></iframe>
 					</section>
 				</section>
 
-				<section>
+				<section id='test1'>
 					<section>
 						<h1>Your first test.</h1>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<h2>Task</h2>
@@ -461,10 +454,10 @@ Give me another: 20
 					</section>
 				</section>
 
-				<section>
+				<section id='conditionals'>
 					<section>
 						<h1>Conditionals</h1>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<h2>if, else and elif</h2>
@@ -478,7 +471,7 @@ if it is sunny
 else
     pick up umbrella
 						</code></pre>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<h2>Equality</h2>
@@ -494,15 +487,11 @@ foo == 10
 						</code></pre>
 						<p>We are checking if <code>foo</code> is equal to <code>10</code> or not.</p>							
 						<p>Watch the video on the next slide and code along with it.</p>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
-					<section>
-						<video controls preload>
-  							<source src="video/Equality.mp4"  type='video/mp4'>
-  							<source src="video/Equality.webm" type='video/webm; codecs="vp8, vorbis"'>
-  							<source src="video/Equality.ogv"  type='video/ogg; codecs="theora, vorbis"'>
-						</video>
-						</br><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+					<section><!--Equality-->
+						<iframe width="420" height="315" src="http://www.youtube.com/embed/Zt9lIsmUldI?rel=0" frameborder="0" allowfullscreen></iframe>
+						</br><a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<h2>Using equality testing in conditionals</h2>
@@ -515,11 +504,11 @@ if pass_attempt == password:
 else:
     print ('Access Denied')
 						</code></pre>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<img src="http://imgs.xkcd.com/comics/password_strength.png">
-						</br><a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						</br><a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<h2>Syntax of Conditionals</h2>
@@ -537,10 +526,10 @@ else:
 					</section>
 				</section>
 
-				<section>
+				<section id='test2'>
 					<section>
 						<h1>Your Second Test</h1>
-						<a href="#" class="image navigate-down"><img width="89" height="119" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
+						<a href="#" class="image navigate-down"><img width="45" height="60" src="images/arrow.png" alt="Down arrow"></a>
 					</section>
 					<section>
 						<h2>The Task</h2>
@@ -562,13 +551,9 @@ else:
 					</section>
 				</section>
 
-
-				<section> <style type="text/css">background</style><iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=x+%3D+0%0Awhile+x+%3C10%3A%0A++++print(x)%0A++++x%2B%3D1&cumulative=false&heapPrimitives=false&drawParentPointers=false&textReferences=false&showOnlyOutputs=false&py=3&curInstr=32&codeDivWidth=350&codeDivHeight=400"> </iframe></section>
-
-
-
-
-
+				<section>
+					
+				</section>
 
 			</div>
 
